@@ -1,0 +1,129 @@
+body{
+  background: #243d52;
+background: linear-gradient(90deg, rgba(36, 61, 82, 1) 0%, rgba(56, 48, 128, 1) 15%, rgba(70, 92, 143, 1) 50%, rgba(63, 69, 112, 1) 100%);
+}
+
+#Headline{
+  font-weight: bold;
+     color: black; /* color of the text */
+        text-shadow:
+            -1px -1px 0 orange,
+            1px -1px 0 orange,
+            -1px 1px 0 orange,
+            1px 1px 0 orange;
+        /* Adjust the offset values and color as needed */
+}
+
+#warning{
+  color: red;
+  outline: yellow;
+}
+
+
+
+
+/*The Side Navigation bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 100px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 22px;
+      position: fixed;
+        top: -5px;
+        right: 0%;
+    
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*End of the Side bar style*/
+
+
+
+
+
+
+/* Match Schedule Table */
+  .match-schedule {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+.match-schedule thead {
+  background-color: #3A4747;
+  color: #fff;
+}
+
+.match-schedule th,
+.match-schedule td {
+  text-align: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid black;
+}
+
+.match-schedule tbody tr:hover {
+  background-color: #d6e0f0;
+  cursor: pointer;
+}
+
+.match-schedule .date {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.match-schedule .team {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.match-schedule .time {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/*end*/

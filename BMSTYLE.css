@@ -1,0 +1,106 @@
+body{
+  background: #801217;
+  background: linear-gradient(90deg, rgba(128, 18, 23, 1) 0%, rgba(110, 20, 32, 1) 50%, rgba(148, 9, 30, 1) 100%);
+}
+
+#BM{
+  text-align: center;
+  font-size: 230%;
+   color: red; /* color of the text */
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+        /* Adjust the offset values and color as needed */
+  
+}
+
+
+#rules{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color: ;
+  
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 50%;
+  
+}
+
+td, th {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+ 
+}
+
+#rules{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color:;
+  
+}
+
+
+
+
+/*The Side Navigation bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 100px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 22px;
+      position: fixed;
+        top: -5px;
+        right: 0%;
+    
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*End of the Side bar style*/

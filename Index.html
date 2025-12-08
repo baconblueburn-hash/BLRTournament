@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Title</title></head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="NStyle.css">
+    <meta name="viewport" content="width=device-width">
+
+    <H1 id="Headline">headline</H1>
+    
+    <hr>
+    
+      <h3 id="warning">WARNING!! this website is not for the Blue Lock show. It's for the Roblox game Blue lock rivals.</h3>
+    
+    
+    <!--The schedule html-->
+        <table class="match-schedule">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Match</th>
+      <th>Time (UTC)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="date">2024-06-25</td>
+      <td class="team">Team A vs Team B</td>
+      <td class="time">18:00</td>
+    </tr>
+    <tr>
+      <td class="date">2024-06-26</td>
+      <td class="team">Team C vs Team D</td>
+      <td class="time">20:00</td>
+    </tr>
+  </tbody>
+</table>
+
+    <!--The schedule html-->
+    
+    
+<!--The Side bar that will open-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="PPXG.html">PXG</a>
+  <a href="BM.html">BM</a>
+  <a href="Ubers.html">Ubers</a>
+  <a href="Barcha.html">Barcha</a>
+</div>
+
+<div id="main"><!--The Menu opener-->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+
+
+
+<script>/*Script of the side navigation bar*/
+function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+  </body>
+  
+  
+</html>
+

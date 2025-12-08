@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head><title>PXG</title></head><!--The Title of the page-->
+  <body>
+    <link rel="stylesheet" type="text/css" href="PXGStyle.css">
+    <meta name="viewport" content="width=device-width">
+
+
+    <h1 id="PXG">P X G</h1>
+    <hr>
+    
+    <pre id="rules" style="color: blue; font-weight: bold;"><mark>
+      RULES: Respect Everyone – No toxicity, racism, sexism, or personal attacks. Keep it competitive but respectful.
+
+Follow Staff Instructions –Coaches, captains, and admins have the final say in matches, training, and lineups.
+
+Stay Active – Inactivity without notice = risk of being benched or cut. Let staff know if you’ll be offline.
+
+Match Discipline – Show up on time for scrims, games, and training. No trolling or throwing.
+
+Voice Chat Etiquette – Stay muted when needed, no spamming, and keep comms clear during matches.
+
+No Cheating/Exploits – Instant ban if caught using unfair methods or glitches.
+
+Recruitment – Only staff can approve/deny new members or prospects.
+
+Community Vibes – Memes, gaming, and chill talk are welcome in the right channels. Keep PXG’s image strong.</mark></pre>
+    
+
+      
+      <table style="color: blue; font-weight: bold;">
+  <tr>
+    <th>Members</th>
+    <th>Position</th>
+    <th>Styles  </th>
+  </tr>
+  <tr>
+    <td>Shix</td><!--name-->
+    <td>RW</td><!--Position-->
+    <td>ISAGI</td><!--Style-->
+  </tr>
+  <tr>
+    <td>oppsey23</td><!--name-->
+    <td>GK</td><!--Position-->
+    <td>Sae</td><!--Style-->
+  </tr>
+  <tr>
+    <td>Float</td><!--name-->
+    <td>RW</td><!--Positon-->
+    <td>Nagi</td><!--Style-->
+  </tr>
+  <tr>
+    <td>Lexi</td><!--name-->
+    <td>N/A</td><!--Position-->
+    <td>Bloodmoon Rin</td><!--Style-->
+  </tr>
+  <tr>
+    <td>Nika</td><!--name-->
+    <td>CM</td><!--Position-->
+    <td>Reaper Sae</td><!--Style-->
+  </tr>
+  <tr>
+    <td>kAce</td><!--name-->
+    <td>N/A</td><!--Position-->
+    <td>N/A</td><!--Style-->
+  </tr>
+   <tr>
+    <td>qontristan</td><!--name-->
+    <td>N/A</td><!--name-->
+    <td>N/A</td><!--name-->
+  </tr>
+   <tr>
+    <td>SIN</td><!--name-->
+    <td>N/A</td><!--name-->
+    <td>N/A</td><!--name-->
+  </tr>
+   <tr>
+    <td>N/A</td><!--name-->
+    <td>N/A</td><!--name-->
+    <td>N/A</td><!--name-->
+  </tr>
+   <tr>
+    <td>NEL DEADLY</td><!--name-->
+    <td>N/A</td><!--name-->
+    <td>Kaiser</td><!--name-->
+  </tr>
+   <tr>
+    <td>Skeleton</td><!--name-->
+    <td>N/A</td><!--name-->
+    <td>N/A</td><!--name-->
+  </tr>
+  
+
+    </table>
+<form id="myForm">
+<label style="font-weight: bold;" for="name">Schedule:</label><!--Name of the Form-->
+<br>
+<input type="text" id="name" name="name">
+<button style="background-color: skyblue;" type="submit">Save</button><!--where you type the input-->
+</form>
+
+<script>
+    const myForm = document.getElementById('myForm');
+    const nameInput = document.getElementById('name');
+
+    // Load saved data on page load
+    window.addEventListener('DOMContentLoaded', () => {
+    const savedName = localStorage.getItem('userName');
+    if (savedName) {
+       nameInput.value = savedName;
+    }
+    });
+
+    // Save data on form submission (or input change)
+    myForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+    localStorage.setItem('userName', nameInput.value);
+    alert('Form data saved locally!');
+      });
+    </script>
+    
+    
+      <!--The Side bar that will open-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index.html">back</a>
+  <a href="">PXG</a>
+  <a href="BM.html">BM</a>
+  <a href="Ubers.html">Ubers</a>
+  <a href="Barcha.html">Barcha</a>
+</div>
+
+<div id="main"><!--The Menu opener-->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+
+
+
+<script>/*Script of the side navigation bar*/
+function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+  </body>
+</html>

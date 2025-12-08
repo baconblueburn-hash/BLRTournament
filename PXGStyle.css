@@ -1,0 +1,160 @@
+/*HORIZONTAL STRIPES(NAME IT BODY TO TURN ON)*/nill {
+        background-image: repeating-linear-gradient(
+            to bottom, /* or 'to right' for vertical stripes */
+            #D6204E,    /* Color of the first stripe */
+            #D9183C 25px, /* End of the first stripe */
+            skyblue 25px, /* Start of the second stripe */
+            skyblue 65px  /* End of the second stripe */
+        )
+    }
+
+/*VERTICAL STRIPES(NAME IT BODY TO TURN ON)*/nill{
+        width: 95%;
+        min-height: 95vh; /* Ensures the background covers the full viewport height */
+        background-image: repeating-linear-gradient(
+            90deg, /* Angle for vertical stripes */
+            #D6204E, /* Color of the first stripe */
+            #D9183C 20px, /* End of the first stripe, define its width */
+            royalblue 20px, /* Start of the second stripe, define its width */
+            skyblue 40px /* End of the second stripe, define its width */
+        );
+    }
+
+body {
+    background-image: url('PXG.jpg'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales image to cover the entire background */
+    background-attachment: fixed; /* Fixes the background image during scrolling */
+
+
+#PXG{
+  text-align: center;
+  font-size: 230%;
+   color: blue; /* color of the text */
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+        /* Adjust the offset values and color as needed */
+  
+}
+
+ul{
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default left padding */
+  margin: 0; /* Removes default margin */
+}
+
+#Horizontal{
+  display: inline-block;/* Makes list items display horizontally and allows for box model properties */
+  margin-right: 180px; /* Adds space between list items */
+}
+
+
+/*The table for list of players*/
+
+table {
+  font-family: arial, sans-serif;
+  width: 50%;
+  
+}
+
+td, th {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+ 
+}
+
+#rules{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color:;
+  
+}
+
+mark{
+  background-color: #6495ED;
+}
+
+
+.Shix{
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00f,
+               0 0 10px #00f,
+               0 0 30px #00f;
+}
+
+#myForm{
+  position: absolute;
+  left: 45%;
+  top: 340px;
+}
+
+#name{
+  background-color:Tomato;
+  color: white;
+  font-weight: bold;
+  font-size: 150%;
+
+
+}
+
+/*The Side Navigation bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 100px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 22px;
+      position: fixed;
+        top: -5px;
+        right: 0%;
+    
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*End of the Side bar style*/
